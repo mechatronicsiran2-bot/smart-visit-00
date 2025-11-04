@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>27Shoes - فروشگاه تخصصی کفش و کتونی</title>
+    <title>بوتیک 17 - Boutique17 | فروشگاه تخصصی پوشاک مردانه</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -15,22 +15,24 @@
         }
         
         :root {
-            --primary: #1a1a2e;
-            --secondary: #16213e;
-            --accent: #0d6efd;
-            --accent-light: #3d8bfd;
-            --text: #2c3e50;
-            --text-light: #6c757d;
-            --background: #ffffff;
-            --white: #ffffff;
-            --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-            --shadow-heavy: 0 15px 40px rgba(0, 0, 0, 0.2);
+            --primary: #0a0a0a;
+            --secondary: #1a1a1a;
+            --accent: #8A2BE2; /* رنگ یاسی */
+            --accent-light: #9b4cff;
+            --accent2: #20B2AA; /* رنگ سبز کله غازی */
+            --accent2-light: #2cd5cc;
+            --text: #e0e0e0;
+            --text-light: #a0a0a0;
+            --background: #121212;
+            --white: #f5f5f5;
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            --shadow-heavy: 0 15px 40px rgba(0, 0, 0, 0.5);
             --radius: 20px;
-            --gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --gradient: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
         }
         
         body {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             color: var(--text);
             line-height: 1.7;
             overflow-x: hidden;
@@ -65,14 +67,14 @@
             object-fit: cover;
             margin-bottom: 2rem;
             border: 5px solid var(--accent);
-            box-shadow: 0 0 30px rgba(13, 110, 253, 0.5);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
             animation: pulse 2s infinite;
         }
         
         .loading-spinner {
             width: 60px;
             height: 60px;
-            border: 5px solid rgba(255, 255, 255, 0.3);
+            border: 5px solid rgba(245, 245, 245, 0.3);
             border-radius: 50%;
             border-top-color: var(--accent);
             animation: spin 1s linear infinite;
@@ -118,14 +120,14 @@
             height: 70px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+            box-shadow: 0 8px 25px rgba(138, 43, 226, 0.3);
             transition: all 0.4s ease;
             border: 3px solid var(--accent);
         }
         
         .logo:hover .logo-img {
             transform: rotate(15deg) scale(1.1);
-            box-shadow: 0 12px 35px rgba(13, 110, 253, 0.5);
+            box-shadow: 0 12px 35px rgba(138, 43, 226, 0.5);
         }
         
         .logo-text {
@@ -133,9 +135,9 @@
             font-weight: 800;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             font-family: 'Lalezar', cursive;
-            background: linear-gradient(45deg, var(--accent), var(--accent-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: var(--white); /* تغییر رنگ به سفید */
+            background: none;
+            -webkit-text-fill-color: var(--white);
         }
         
         /* Navigation */
@@ -163,8 +165,8 @@
         /* Hero Section */
         .hero {
             background: 
-                linear-gradient(rgba(22, 33, 62, 0.85), rgba(26, 26, 46, 0.9)),
-                url('https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1112&q=80');
+                linear-gradient(rgba(10, 10, 10, 0.85), rgba(26, 26, 26, 0.9)),
+                url('https://images.unsplash.com/photo-1558769132-cb25e5b8352f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -185,7 +187,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 70% 30%, rgba(13, 110, 253, 0.2) 0%, transparent 50%);
+            background: radial-gradient(circle at 70% 30%, rgba(138, 43, 226, 0.2) 0%, transparent 50%);
         }
         
         .hero-container {
@@ -261,7 +263,7 @@
         
         .btn-primary:hover {
             transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 15px 35px rgba(13, 110, 253, 0.4);
+            box-shadow: 0 15px 35px rgba(138, 43, 226, 0.4);
         }
         
         .btn-secondary {
@@ -275,10 +277,32 @@
             transform: translateY(-8px) scale(1.05);
         }
         
-        /* Card Info Section - Moved up */
+        /* Quote Section */
+        .quote-section {
+            padding: 4rem 2rem;
+            background: var(--background);
+        }
+        
+        .quote-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .quote-text {
+            font-size: 2.2rem;
+            line-height: 1.6;
+            color: var(--accent2);
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(32, 178, 170, 0.3);
+            margin-bottom: 2rem;
+            font-family: 'Lalezar', cursive;
+        }
+        
+        /* Card Info Section */
         .card-info {
             padding: 4rem 2rem;
-            background: var(--white);
+            background: var(--background);
         }
         
         .card-container {
@@ -292,6 +316,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            border: 2px solid var(--accent);
         }
         
         .card-container::before {
@@ -301,7 +326,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.3) 0%, transparent 50%);
+            background: radial-gradient(circle at top left, rgba(138, 43, 226, 0.3) 0%, transparent 50%);
         }
         
         .card-title {
@@ -310,6 +335,7 @@
             font-weight: 700;
             position: relative;
             z-index: 1;
+            color: var(--accent2);
         }
         
         .card-details {
@@ -328,6 +354,7 @@
         .card-details:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
         }
         
         .card-number {
@@ -338,6 +365,7 @@
             direction: ltr;
             text-align: center;
             font-weight: 600;
+            color: var(--accent2);
         }
         
         .card-holder {
@@ -357,7 +385,7 @@
         /* Quick Contact Section */
         .quick-contact-section {
             padding: 4rem 2rem;
-            background: var(--white);
+            background: var(--background);
             position: relative;
         }
         
@@ -382,9 +410,9 @@
             transition: all 0.3s ease;
             padding: 1.5rem;
             border-radius: var(--radius);
-            background: var(--white);
+            background: var(--secondary);
             box-shadow: var(--shadow);
-            border: 1px solid rgba(13, 110, 253, 0.1);
+            border: 1px solid rgba(138, 43, 226, 0.1);
         }
         
         .contact-item:hover {
@@ -402,7 +430,7 @@
             justify-content: center;
             font-size: 1.6rem;
             color: var(--white);
-            box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.3);
             flex-shrink: 0;
         }
         
@@ -410,7 +438,7 @@
             margin-bottom: 0.8rem;
             font-size: 1.4rem;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--white);
         }
         
         .contact-details a, .contact-details p {
@@ -421,7 +449,7 @@
         }
         
         .contact-details a:hover {
-            color: var(--accent);
+            color: var(--accent-light);
         }
         
         .social-links {
@@ -466,7 +494,7 @@
         .social-link:hover {
             background: linear-gradient(135deg, var(--accent), var(--accent-light));
             transform: translateY(-8px) scale(1.1);
-            box-shadow: 0 10px 25px rgba(13, 110, 253, 0.4);
+            box-shadow: 0 10px 25px rgba(138, 43, 226, 0.4);
         }
         
         .social-text {
@@ -484,6 +512,19 @@
             opacity: 1;
         }
         
+        .telegram-note {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: var(--radius);
+            border-right: 4px solid var(--accent);
+        }
+        
+        .telegram-note p {
+            color: var(--accent-light);
+            font-weight: 600;
+        }
+        
         .quick-contact {
             background: var(--gradient);
             padding: 3rem;
@@ -492,6 +533,7 @@
             text-align: center;
             transition: all 0.4s ease;
             color: var(--white);
+            border: 2px solid var(--accent2);
         }
         
         .quick-contact:hover {
@@ -666,7 +708,7 @@
         
         .feature-card:hover .feature-icon {
             transform: scale(1.2) rotate(15deg);
-            background: rgba(13, 110, 253, 0.3);
+            background: rgba(138, 43, 226, 0.3);
         }
         
         .feature-card h3 {
@@ -684,7 +726,7 @@
         /* Add to Home Section */
         .add-to-home-section {
             padding: 4rem 2rem;
-            background: var(--white);
+            background: var(--background);
         }
         
         .add-to-home-container {
@@ -698,6 +740,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            border: 2px solid var(--accent2);
         }
         
         .add-to-home-container::before {
@@ -707,7 +750,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at top left, rgba(13, 110, 253, 0.3) 0%, transparent 50%);
+            background: radial-gradient(circle at top left, rgba(32, 178, 170, 0.3) 0%, transparent 50%);
         }
         
         .add-to-home-content {
@@ -725,7 +768,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid var(--accent);
-            box-shadow: 0 10px 30px rgba(13, 110, 253, 0.4);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
             flex-shrink: 0;
         }
         
@@ -814,8 +857,8 @@
         /* Visit Smart Section */
         .visit-smart-section {
             padding: 3rem 2rem;
-            background: var(--white);
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            background: var(--background);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .visit-smart-container {
@@ -839,14 +882,14 @@
         }
         
         .visit-smart-contact a {
-            color: var(--accent);
+            color: var(--accent-light);
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
         }
         
         .visit-smart-contact a:hover {
-            color: var(--accent-light);
+            color: var(--white);
         }
         
         /* Modal Styles */
@@ -869,7 +912,7 @@
         }
         
         .modal-content {
-            background: var(--white);
+            background: var(--secondary);
             border-radius: var(--radius);
             padding: 2.5rem;
             max-width: 500px;
@@ -877,6 +920,7 @@
             box-shadow: var(--shadow-heavy);
             position: relative;
             text-align: center;
+            color: var(--white);
         }
         
         .modal-close {
@@ -891,13 +935,13 @@
         }
         
         .modal-close:hover {
-            color: var(--accent);
+            color: var(--accent-light);
         }
         
         .modal-title {
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            color: var(--primary);
+            color: var(--white);
             font-weight: 700;
         }
         
@@ -914,7 +958,7 @@
         
         .modal-step h4 {
             margin-bottom: 0.5rem;
-            color: var(--primary);
+            color: var(--white);
             font-weight: 600;
         }
         
@@ -926,7 +970,7 @@
         .modal-footer {
             margin-top: 2rem;
             padding-top: 1.5rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .modal-btn {
@@ -1032,7 +1076,7 @@
                 padding: 4rem 1rem;
             }
             
-            .quick-contact-section, .card-info, .add-to-home-section {
+            .quick-contact-section, .card-info, .add-to-home-section, .quote-section {
                 padding: 3rem 1rem;
             }
             
@@ -1057,6 +1101,10 @@
             .add-to-home-text {
                 text-align: center;
             }
+            
+            .quote-text {
+                font-size: 1.8rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -1069,7 +1117,7 @@
                 font-size: 2rem;
             }
             
-            .features, .quick-contact-section, .card-info, .add-to-home-section {
+            .features, .quick-contact-section, .card-info, .add-to-home-section, .quote-section {
                 padding: 3rem 1rem;
             }
             
@@ -1091,13 +1139,17 @@
                 width: 120px;
                 height: 120px;
             }
+            
+            .quote-text {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Loading Screen -->
     <div class="loading-screen" id="loadingScreen">
-        <img src="https://i.ibb.co/JwNqqNXq/27shoes-logo.jpg" alt="27Shoes Logo" class="loading-logo">
+        <img src="https://i.ibb.co/JR91hkgr/botik17-logo.jpg" alt="بوتیک 17 Logo" class="loading-logo">
         <div class="loading-spinner"></div>
     </div>
 
@@ -1105,8 +1157,8 @@
     <header>
         <div class="header-container">
             <div class="logo">
-                <img src="https://i.ibb.co/JwNqqNXq/27shoes-logo.jpg" alt="27Shoes Logo" class="logo-img">
-                <div class="logo-text">27Shoes</div>
+                <img src="https://i.ibb.co/JR91hkgr/botik17-logo.jpg" alt="بوتیک 17 Logo" class="logo-img">
+                <div class="logo-text">بوتیک 17 | Boutique17</div>
             </div>
             <nav>
                 <ul>
@@ -1121,11 +1173,11 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
-            <h1>27Shoes - تخصصی‌ترین فروشگاه کفش و کتونی</h1>
-            <p>با جدیدترین و شیک‌ترین مدل‌های کفش و کتونی روز دنیا در خدمت شما هستیم. خرید حضوری و آنلاین با ارسال فوری و تضمین کیفیت</p>
+            <h1>بوتیک 17 - Boutique17 | فروشگاه تخصصی پوشاک مردانه</h1>
+            <p>با جدیدترین و شیک‌ترین مدل‌های پوشاک مردانه روز دنیا در خدمت شما هستیم. خرید حضوری و آنلاین با ارسال فوری و تضمین کیفیت</p>
             <div class="hero-buttons">
                 <a href="#services" class="btn btn-primary">
-                    <i class="fas fa-shoe-prints"></i> خدمات ما
+                    <i class="fas fa-tshirt"></i> خدمات ما
                 </a>
                 <a href="#contact" class="btn btn-secondary">
                     <i class="fas fa-phone-alt"></i> تماس با ما
@@ -1134,13 +1186,20 @@
         </div>
     </section>
 
-    <!-- Card Info Section - Moved up -->
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-container">
+            <div class="quote-text">پوشیدنو همه بلدن، استایل کردن هنره!</div>
+        </div>
+    </section>
+
+    <!-- Card Info Section -->
     <section class="card-info">
         <div class="card-container">
             <h3 class="card-title">شماره کارت بانکی</h3>
             <div class="card-details" id="cardDetails">
-                <div class="card-number">5054 1610 1434 7029</div>
-                <div class="card-holder">به نام: محمد امین آبادی</div>
+                <div class="card-number">6037 6975 8226 5275</div>
+                <div class="card-holder">به نام: نعمتی</div>
                 <div class="copy-text">
                     <i class="fas fa-copy"></i>
                     کلیک کنید تا کپی شود
@@ -1159,8 +1218,8 @@
                     </div>
                     <div class="contact-details">
                         <h3>آدرس کامل فروشگاه</h3>
-                        <p>امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۱۱</p>
-                        <p>فروشگاه کفش و کتونی 27Shoes</p>
+                        <p>امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۰۸ و ۲۰۹</p>
+                        <p>بوتیک 17</p>
                     </div>
                 </div>
                 
@@ -1170,7 +1229,7 @@
                     </div>
                     <div class="contact-details">
                         <h3>شماره تماس</h3>
-                        <a href="tel:09158700075">۰۹۱۵۸۷۰۰۰۷۵</a>
+                        <a href="tel:09156283272">۰۹۱۵۶۲۸۳۲۷۲</a>
                     </div>
                 </div>
                 
@@ -1181,14 +1240,21 @@
                     <div class="contact-details">
                         <h3>شبکه‌های اجتماعی</h3>
                         <div class="social-links">
-                            <a href="https://wa.me/989158700075" class="social-link" target="_blank">
+                            <a href="https://wa.me/989156283272" class="social-link" target="_blank">
                                 <i class="fab fa-whatsapp" style="color: white;"></i>
                                 <span class="social-text">واتساپ</span>
                             </a>
-                            <a href="https://instagram.com/27__shoes" class="social-link" target="_blank">
+                            <a href="https://instagram.com/botik17__" class="social-link" target="_blank">
                                 <i class="fab fa-instagram" style="color: white;"></i>
                                 <span class="social-text">اینستاگرام</span>
                             </a>
+                            <a href="https://t.me/+WUbxUe9vy9wyOTQ0" class="social-link" target="_blank">
+                                <i class="fab fa-telegram" style="color: white;"></i>
+                                <span class="social-text">تلگرام</span>
+                            </a>
+                        </div>
+                        <div class="telegram-note">
+                            <p>کانال تلگرامی ما: لباس‌های مردانه اسپرت و کلاسیک</p>
                         </div>
                     </div>
                 </div>
@@ -1199,19 +1265,19 @@
                 <p>برای دریافت اطلاعات بیشتر و مشاوره رایگان، از طریق یکی از روش‌های زیر با ما در تماس باشید</p>
                 
                 <div class="contact-buttons">
-                    <a href="https://wa.me/989158700075" class="contact-btn whatsapp" target="_blank">
+                    <a href="https://wa.me/989156283272" class="contact-btn whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i> واتساپ
                     </a>
                     
-                    <a href="https://instagram.com/27__shoes" class="contact-btn instagram" target="_blank">
+                    <a href="https://instagram.com/botik17__" class="contact-btn instagram" target="_blank">
                         <i class="fab fa-instagram"></i> اینستاگرام
                     </a>
                     
-                    <a href="tel:09158700075" class="contact-btn call">
+                    <a href="tel:09156283272" class="contact-btn call">
                         <i class="fas fa-phone-alt"></i> تماس تلفنی
                     </a>
                     
-                    <a href="https://www.google.com/maps/search/?api=1&query=امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۱۱" class="contact-btn map" target="_blank">
+                    <a href="https://www.google.com/maps/search/?api=1&query=امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۰۸ و ۲۰۹" class="contact-btn map" target="_blank">
                         <i class="fas fa-map-marked-alt"></i> مسیریابی
                     </a>
                 </div>
@@ -1222,17 +1288,17 @@
     <!-- Features Section -->
     <section class="features" id="services">
         <div class="section-title">
-            <h2>چرا 27Shoes؟</h2>
+            <h2>چرا بوتیک 17؟</h2>
             <p>ویژگی‌هایی که ما را به انتخاب اول شما تبدیل می‌کند</p>
         </div>
         
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
-                    <i class="fas fa-shoe-prints"></i>
+                    <i class="fas fa-tshirt"></i>
                 </div>
                 <h3>تنوع بی‌نظیر</h3>
-                <p>مجموعه‌ای کامل از انواع کفش و کتونی با جدیدترین مدل‌های روز دنیا برای تمامی سلیقه‌ها</p>
+                <p>مجموعه‌ای کامل از انواع پوشاک مردانه با جدیدترین مدل‌های روز دنیا برای تمامی سلیقه‌ها</p>
             </div>
             
             <div class="feature-card">
@@ -1265,7 +1331,7 @@
     <section class="add-to-home-section">
         <div class="add-to-home-container">
             <div class="add-to-home-content">
-                <img src="https://i.ibb.co/JwNqqNXq/27shoes-logo.jpg" alt="27Shoes Logo" class="add-to-home-logo">
+                <img src="https://i.ibb.co/JR91hkgr/botik17-logo.jpg" alt="بوتیک 17 Logo" class="add-to-home-logo">
                 <div class="add-to-home-text">
                     <h3>افزودن به صفحه اصلی</h3>
                     <p>برای دسترسی سریع‌تر به فروشگاه، این صفحه را به صفحه اصلی دستگاه خود اضافه کنید. با این کار می‌توانید مانند یک اپلیکیشن به فروشگاه ما دسترسی داشته باشید.</p>
@@ -1281,27 +1347,27 @@
     <footer>
         <div class="footer-container">
             <div class="footer-col">
-                <h4>27Shoes</h4>
-                <p>فروشگاه تخصصی کفش و کتونی با سال‌ها تجربه در ارائه بهترین و جدیدترین مدل‌های روز دنیا</p>
+                <h4>بوتیک 17 | Boutique17</h4>
+                <p>فروشگاه تخصصی پوشاک مردانه با سال‌ها تجربه در ارائه بهترین و جدیدترین مدل‌های روز دنیا</p>
             </div>
             
             <div class="footer-col">
                 <h4>خدمات ما</h4>
                 <ul>
-                    <li><i class="fas fa-male"></i> کفش مردانه</li>
-                    <li><i class="fas fa-female"></i> کفش زنانه</li>
-                    <li><i class="fas fa-child"></i> کفش بچگانه</li>
-                    <li><i class="fas fa-running"></i> کتونی ورزشی</li>
+                    <li><i class="fas fa-male"></i> پوشاک مردانه اسپرت</li>
+                    <li><i class="fas fa-user-tie"></i> پوشاک مردانه کلاسیک</li>
+                    <li><i class="fas fa-tshirt"></i> پوشاک مردانه روزمره</li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>تماس با ما</h4>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۱۱</li>
-                    <li><i class="fas fa-phone-alt"></i> ۰۹۱۵۸۷۰۰۰۷۵</li>
+                    <li><i class="fas fa-map-marker-alt"></i> امامیه، چهارراه مخابرات، مجتمع اکسیر، طبقه همکف، واحد ۲۰۸ و ۲۰۹</li>
+                    <li><i class="fas fa-phone-alt"></i> ۰۹۱۵۶۲۸۳۲۷۲</li>
                     <li><i class="fab fa-whatsapp"></i> واتساپ</li>
                     <li><i class="fab fa-instagram"></i> اینستاگرام</li>
+                    <li><i class="fab fa-telegram"></i> تلگرام (لباس مردانه)</li>
                 </ul>
             </div>
         </div>
@@ -1358,11 +1424,11 @@
     </div>
 
     <script>
-        // Loading Screen
+        // Loading Screen - فقط 2 ثانیه نمایش داده شود
         window.addEventListener('load', function() {
             setTimeout(function() {
                 document.getElementById('loadingScreen').classList.add('hidden');
-            }, 1500);
+            }, 2000); // کاهش زمان به 2 ثانیه
         });
 
         // Add to Home Screen Functionality
@@ -1389,7 +1455,7 @@
         // Copy Card Number Functionality
         const cardDetails = document.getElementById('cardDetails');
         const copyNotification = document.getElementById('copyNotification');
-        const cardNumber = '5054161014347029';
+        const cardNumber = '6037697582265275';
 
         cardDetails.addEventListener('click', async () => {
             try {
